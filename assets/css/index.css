@@ -1,0 +1,162 @@
+html, body { margin: 0; padding: 10px;}
+body {
+    background: #C5CBCD;
+}
+.dashboard {
+    background: #ffffff;
+    height: 540px;
+}
+.section_title {
+    background: #272C2E;
+    color: #FFFFFF;
+    font-family: "Segoe UI Light";
+    text-align: center;
+}
+.dashboard button {
+    border: solid 0px #FFFFFF;
+    color: #FFFFFF;
+    outline: none;
+    width: 40px;
+    font-size: 20px;
+    background: #03B0E9;
+    border-radius: 4px;
+    font-family: "Segoe UI Light";
+}
+
+.dashboard button:active {
+    background: #007095;
+}
+.settings {
+    position: fixed;
+    top:-3px;
+    right: 0;
+
+    /*Pour éviter la séléction*/
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none;   /* Chrome/Safari/Opera */
+    -khtml-user-select: none;    /* Konqueror */
+    -moz-user-select: none;      /* Firefox */
+    -ms-user-select: none;       /* Internet Explorer/Edge */
+    user-select: none;           /* Non-prefixed version, currently
+                                  not supported by any browser */
+}
+.settings .main-button {
+    width: 150px;
+    height: 43px;
+
+    background: #ffffff;
+    border: 0px solid #ffffff;
+    font-size: 15px;
+    outline: none;
+    margin: 0;
+
+}
+.settings .main-button:hover {
+    color: #ffffff;
+    background: #FF8F7B;
+}
+
+.settings .reset-button {
+    height: 43px;
+    color: #ffffff;
+    background: #FF8F7B;
+    border: 0px solid #ffffff;
+    font-size: 15px;
+    outline: none;
+    margin: 0;
+    float: left;
+    visibility: hidden;
+
+    border-right: 1px solid #ffffff;
+}
+.settings .reset-button:hover {
+    background: #D05B45;
+}
+.settings .reset-button:active {
+    background: #989898;
+}
+
+.tables_div {
+    margin: 10px;
+}
+.tables_div h3 {
+    font-family: "Segoe UI Light";
+    color: #595959;
+}
+/************/
+/*  POP-UP  */
+/************/
+.dash_popup {
+    position: fixed;
+    width: 1000px;
+    height: 500px;
+    top: 50%;
+    left: 50%;
+    margin-top: -250px; /* Negative half of height. */
+    margin-left: -500px; /* Negative half of width. */
+
+    background-color: #ffffff;
+    z-index: 1001;
+}
+
+.dash_popup .dash_popup_header {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 35px;
+    background-color: #03B0E9;
+    color: #ffffff;
+    font-family: "Segoe UI";
+    font-size: 20px;
+    text-align: center;
+    margin: 0;
+}
+.dash_pop_title {
+    margin-top: -17.5px; /* Negative half of height. */
+}
+.dash_popup .dash_popup_close {
+    position: absolute;
+    top: 0;
+    right: 15px;
+    color: #ffffff;
+    margin-top: 2px;
+}
+.dash_popup .dash_popup_close a:visited, .dash_popup .dash_popup_close a:link {
+    text-decoration: none;
+    color: #ffffff;
+}
+.dash_popup .content {
+    position: relative;
+    top: 35px;
+    margin: 5px;
+    font-family: "Segoe UI";
+    /*margin-left: 50px;*/
+}
+.dash_popup table {
+    border-collapse: collapse;
+    width: 100%;
+}
+.dash_popup .food_quantity, .dash_popup .food_typed {
+    text-align: center;
+}
+.dash_popup .food_content {
+    padding-left: 100px;
+}
+.dash_popup table tr {
+    border-bottom: 1px solid black;
+}
+.dash_popup table tr:last-of-type {
+    border-bottom: 0px solid #ffffff;
+}
+.popup-mask {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1000;
+    background: rgba(0, 0, 0, 0.5);
+}
+.food_isTyped {
+    background: #D6FF96;
+}

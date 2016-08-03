@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Ritter Hoft - Reservations</title>
+    <meta charset="utf-8">
+    <meta name="ROBOTS" content="NOINDEX, NOFOLLOW">
+    <link rel="stylesheet" type="text/css" href="css/index.css" />
+    <link rel="stylesheet" type="text/css" href="css/glyphicons.css" />
+</head>
+<body>
+    <div class="settings">
+        <button class="reset-button"><span class="glyphicon glyphicon-repeat"></span> Remmetre les tables à 0</button>
+        <button class="main-button"><span class="glyphicon glyphicon-cog"></span> Paramètres</button>
+    </div>
+
+    <div class="dashboard">
+        <h2 class="section_title">Tables</h2>
+        <div class="tables_div">
+            <h3>Restaurant</h3>
+            <button id="restaurant_1" class="dash_button">1</button>
+            <button id="restaurant_2" class="dash_button">2</button>
+            <button id="restaurant_3" class="dash_button">3</button>
+            <button id="restaurant_4" class="dash_button">4</button>
+            <button id="restaurant_5" class="dash_button">5</button>
+            <button id="restaurant_6" class="dash_button">6</button>
+            <button id="restaurant_7" class="dash_button">7</button>
+            <button id="restaurant_8" class="dash_button">8</button>
+            <button id="restaurant_9" class="dash_button">9</button>
+            <button id="restaurant_10" class="dash_button">10</button>
+            <button id="restaurant_11" class="dash_button">11</button>
+            <button id="restaurant_12" class="dash_button">12</button>
+            <button id="restaurant_13" class="dash_button">13</button>
+            <button id="restaurant_14" class="dash_button">14</button>
+            <button id="restaurant_15" class="dash_button">15</button>
+            <button id="restaurant_16" class="dash_button">16</button>
+            <button id="restaurant_17" class="dash_button">17</button>
+            <button id="restaurant_18" class="dash_button">18</button>
+
+            <h3>Terasse</h3>
+            <button id="restaurant_101" class="dash_button">101</button>
+            <button id="restaurant_102" class="dash_button">102</button>
+            <button id="restaurant_103" class="dash_button">103</button>
+            <button id="restaurant_104" class="dash_button">104</button>
+            <button id="restaurant_105" class="dash_button">105</button>
+            <button id="restaurant_106" class="dash_button">106</button>
+            <button id="restaurant_107" class="dash_button">107</button>
+            <button id="restaurant_108" class="dash_button">108</button>
+
+            <h3>Terasse derrière</h3>
+            <button id="restaurant_201" class="dash_button">201</button>
+            <button id="restaurant_202" class="dash_button">202</button>
+            <button id="restaurant_203" class="dash_button">203</button>
+            <button id="restaurant_204" class="dash_button">204</button>
+            <button id="restaurant_205" class="dash_button">205</button>
+
+            <h3>Banquets</h3>
+            <button id="restaurant_100" class="dash_button">100</button>
+
+
+        </div>
+    </div>
+
+    <script src="js/jquery-2.2.0.min.js"></script>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="/js/data_hub.js"></script>
+    <script src="/js/dashboard_popup.js"></script>
+    <script src="/js/animations.js"></script>
+    <script>
+        var socket = io.connect('http://localhost:8080');
+
+    </script>
+
+</body>
+</html>
