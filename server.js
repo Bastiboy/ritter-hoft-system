@@ -71,4 +71,4 @@ io.sockets.on('connection', function(socket){
 });
 
 console.log("server.js launched on port 8080");
-server.listen(8080);
+server.listen(process.env.PORT || 8080);
