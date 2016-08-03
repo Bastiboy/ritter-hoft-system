@@ -1,0 +1,26 @@
+{
+  "name": "ritterhoft-system",
+  "version": "1.0.0",
+  "description": "App who serves to manage the bills for restaurants",
+  "main": "server.js",
+  "dependencies": {
+    "express-session": "^1.13.0",
+    "fs": "^0.0.2",
+    "mongoose": "^4.4.7"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Bastiboy/ritter-hoft-system.git"
+  },
+  "author": "Sébastien Letzelter",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Bastiboy/ritter-hoft-system/issues"
+  },
+  "homepage": "https://github.com/Bastiboy/ritter-hoft-system#readme"
+}
