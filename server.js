@@ -15,6 +15,8 @@ app.get('/', function(req, res){
     var fileName = './assets/json/tables.json';
     var file = require(fileName);
 
+    //On transforme les + en espace (du a la transformation en utf 8)
+    req.params.content.replace(/\+/g,' ');
     // On dit les modifs a faire
     for(var i = 0; i < file.length; i++){
         if (file[i].tableNb == req.params.table){
