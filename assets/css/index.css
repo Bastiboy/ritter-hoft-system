@@ -160,3 +160,12 @@ body {
 .food_isTyped {
     background: #D6FF96;
 }
+.popup_loader {
+    width: 250px;
+    height: 250px;
+    position: absolute;
+    left: 50%;
+    margin-top: 50px; /* Negative half of height. */
+    margin-left: -125px; /* Negative half of width. */
+
+}
