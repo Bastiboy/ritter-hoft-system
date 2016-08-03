@@ -16,6 +16,7 @@ $(document).ready(function(){
         dashboard_popup +=          "</div>";
         dashboard_popup += "    </div>";
         dashboard_popup += "    <div class=\"content\">";
+        dashboard_popup += "    <img class=\"popup_loader\" src=\"img/ripple.svg\">";
         dashboard_popup +=      "<table class=\"pop_food_table\">";
         dashboard_popup +=      "</table>"
         dashboard_popup += "    </div>";
@@ -38,6 +39,9 @@ $(document).ready(function(){
 
     // Quand on get les datas, on les affiche !
     socket.on('food_data', function (data) {
+
+        // On enlève le truc de chargement
+        $('.popup_loader').remove();
         console.log(data)
         var htmlData = "";
         for(var i = 0; i < data.content.length; i++){
