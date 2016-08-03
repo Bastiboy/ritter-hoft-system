@@ -16,11 +16,11 @@ app.get('/', function(req, res){
     var file = require(fileName);
 
     //On transforme les + en espace (du a la transformation en utf 8)
-    req.params.content.replace(/\+/g,' ');
+    var content = req.params.content.replace(/\+/g,' ');
     // On dit les modifs a faire
     for(var i = 0; i < file.length; i++){
         if (file[i].tableNb == req.params.table){
-            file[i].content.push(req.params.content);
+            file[i].content.push(content);
             file[i].quantity.push(req.params.quantity);
             file[i].isTyped.push(false);
             break;
