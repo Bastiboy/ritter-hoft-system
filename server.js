@@ -32,8 +32,9 @@ app.get('/', function(req, res){
         console.log('writing to ' + fileName);
     });
 
-    // On affiche le résultat
-    res.render('restaurant_send.ejs');
+    // On affiche que tout s'est passé sans problèmes
+    res.writeHead(200);
+    res.end('SUCCESS');
 });
 
 
