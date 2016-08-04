@@ -4,11 +4,20 @@
     <meta name="ROBOTS" content="NOINDEX, NOFOLLOW">
 </head>
 <body>
+    SUCCESS
     <script src="/js/jquery-2.2.0.min.js"></script>
     <script src="/socket.io/socket.io.js"></script>
-    <script src="/js/send_data.js"></script>
+
+    <script>
+        $(document).ready(function(){
+            socket.emit('restaurant_data', "<%= food_data %>");
+        });
+    </script>
+
     <script>
         var socket = io.connect('https://young-oasis-96944.herokuapp.com');
+        // var socket = io.connect('localhost:8080');
     </script>
+
 </body>
 </html>

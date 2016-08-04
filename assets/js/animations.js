@@ -9,5 +9,5 @@ $(document).ready(function(){
         $('.reset-button').css({"visibility" : "hidden"});
         $('.main-button').css({"background" : "#ffffff", "color" : "#000000"});
     });
-    
+
 });

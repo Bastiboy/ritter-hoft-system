@@ -13,7 +13,7 @@ body {
     text-align: center;
 }
 .dashboard button {
-    border: solid 0px #FFFFFF;
+    border: solid 0px #03B0E9;
     color: #FFFFFF;
     outline: none;
     width: 40px;
@@ -97,6 +97,7 @@ body {
 
     background-color: #ffffff;
     z-index: 1001;
+    overflow-y: auto;
 }
 
 .dash_popup .dash_popup_header {
@@ -109,7 +110,6 @@ body {
     font-family: "Segoe UI";
     font-size: 20px;
     text-align: center;
-    margin: 0;
 }
 .dash_pop_title {
     margin-top: -17.5px; /* Negative half of height. */
@@ -168,4 +168,18 @@ body {
     margin-top: 50px; /* Negative half of height. */
     margin-left: -125px; /* Negative half of width. */
 
+}
+
+::-webkit-scrollbar {
+    width: 12px;
+}
+::-webkit-scrollbar-track {
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #B3B3B3;
+}
+::-webkit-scrollbar-thumb:active {
+    background: #919191;
 }

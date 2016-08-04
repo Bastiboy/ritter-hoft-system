@@ -10,12 +10,10 @@ $(document).ready(function(){
 
     function animate_table(tableNb){
         // On met en rouge et on anime
-        $('#restaurant_' + tableNb).css({"borderColor" : "#12C200", color : "#12C200"});
-        $('#restaurant_' + tableNb).animate({borderWidth : "4px", borderRadius : "10px"}, 100, function(){
-            // On met remet en normal
-            $(this).animate({borderWidth : "1px", borderRadius : "5px"}, 100, function(){
-                $(this).css({borderColor : "#11A0E5", color : "#11A0E5"});
-            });
-        });
+        $('#restaurant_' + tableNb).css({"background" : "#FFB300"});
+        // On met remet en normal
+        setTimeout(function(){
+            $('#restaurant_' + tableNb).css({"background" : "#03B0E9"});
+        }, 500)
     }
 });
