@@ -5,6 +5,8 @@ var app = express();
 var server = require('http').createServer(app);
 var io = require('socket.io')(server);
 
+app.io = io;
+
 app.use(express.static(__dirname + '/assets'))
 app.get('/', function(req, res){
     res.render('index.ejs');
@@ -34,10 +36,12 @@ app.get('/', function(req, res){
 
     });
     // On broadcast en socket.io pour lancer l'animation
-
-    // On affiche que tout s'est passé sans problèmes
     var food_data = req.params.table + ":" + req.params.quantity + ":" + content
-    res.render('restaurant_send.ejs', {food_data : food_data});
+    req.app.io.emit('restaurant_data', food_data);
+    // On affiche que tout s'est passé sans problèmes
+    // res.render('restaurant_send.ejs', {food_data : food_data});
+    res.writeHead(200);
+    res.end('SUCCESS')
 });
 
 
