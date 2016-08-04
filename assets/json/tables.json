@@ -4,14 +4,35 @@
     "content": [
       "Carpaccio",
       "Carpaccio",
+      "Carpaccio",
+      "Carpaccio",
+      "Carpaccio",
+      "Carpaccio",
+      "Carpaccio",
+      "Carpaccio",
+      "Carpaccio",
       "Carpaccio"
     ],
     "quantity": [
-      "1",
-      "1",
-      "1"
+      "11",
+      "11",
+      "11",
+      "11",
+      "11",
+      "11",
+      "11",
+      "11",
+      "11",
+      "11"
     ],
     "isTyped": [
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
       false,
       false,
       false
@@ -37,9 +58,18 @@
   },
   {
     "tableNb": "5",
-    "content": [],
-    "quantity": [],
-    "isTyped": []
+    "content": [
+      "Hamburger du turfu :)",
+      "Hamburger du turfu :D"
+    ],
+    "quantity": [
+      "11",
+      "4"
+    ],
+    "isTyped": [
+      false,
+      false
+    ]
   },
   {
     "tableNb": "6",

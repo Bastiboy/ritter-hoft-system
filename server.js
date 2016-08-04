@@ -20,11 +20,29 @@ app.get('/', function(req, res){
     //On transforme les + en espace (du a la transformation en utf 8)
     var content = req.params.content.replace(/\+/g,' ');
     // On dit les modifs a faire
-    for(var i = 0; i < file.length; i++){
-        if (file[i].tableNb == req.params.table){
-            file[i].content.push(content);
-            file[i].quantity.push(req.params.quantity);
-            file[i].isTyped.push(false);
+    for (var i = 0; i < file.length; i++) {
+
+        if (file[i].tableNb == req.params.table){ //Si on trouve la table qu'on cherche
+            // On regarde si le "content" existe déja
+            var wasEdited = false;
+
+            for (var j = 0; j < file[i].content.length; j++){
+
+                if (file[i].content[j] == content) {
+
+                    file[i].quantity[j] = parseInt(file[i].quantity[j]) + parseInt(req.params.quantity);
+                    file[i].quantity[j] = file[i].quantity[j].toString();
+                    wasEdited = true;
+
+                }
+            }
+
+            if (!wasEdited){ //Si on a pas modifié la quantité dun produit alors on l'ajoute
+                file[i].content.push(content);
+                file[i].quantity.push(req.params.quantity);
+                file[i].isTyped.push(false);
+            }
+
             break;
         }
     }

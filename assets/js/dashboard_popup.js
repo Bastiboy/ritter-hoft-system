@@ -16,9 +16,9 @@ $(document).ready(function(){
         dashboard_popup +=          "</div>";
         dashboard_popup += "    </div>";
         dashboard_popup += "    <div class=\"content\">";
-        dashboard_popup += "    <img class=\"popup_loader\" src=\"img/ripple.svg\">";
-        dashboard_popup +=      "<table class=\"pop_food_table\">";
-        dashboard_popup +=      "</table>"
+        dashboard_popup +=          "<img class=\"popup_loader\" src=\"img/ripple.svg\">";
+        dashboard_popup +=          "<table class=\"pop_food_table\">";
+        dashboard_popup +=          "</table>"
         dashboard_popup += "    </div>";
         dashboard_popup += "</div>";
 
@@ -42,7 +42,7 @@ $(document).ready(function(){
 
         // On enlève le truc de chargement
         $('.popup_loader').remove();
-        console.log(data)
+
         var htmlData = "";
         for(var i = 0; i < data.content.length; i++){
             htmlData += "<tr class=\"food_column ";
